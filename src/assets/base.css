@@ -1,0 +1,87 @@
+:root{
+	/* 自动切换系统模式 */
+	color-scheme: light dark;
+	font-size: 14px;
+	/* 全局主色调 */
+	--base-color : #F6BAC3;
+	
+	/* 去掉上下滚动条 */
+	::-webkit-scrollbar{
+		width: 0px;
+		/* height: 0px; */
+	}
+
+}
+body,html, p, h1, ul{
+	margin: 0px;
+}
+ul{padding: 0px;}
+a{
+	text-decoration: none; 
+	color: #333;
+	/*去掉移动端IOS上面关于超链接会多出一个蓝色背景*/
+	-webkit-tap-highlight-color:transparent;
+	/*阻止长按超链接弹出菜单*/
+	-webkit-touch-callout: none;
+}
+img{vertical-align: bottom;}
+
+/*去掉IOS默认设置的样式*/
+input, input[type="text"], input[type="password"]{
+	-webkit-appearance: none; 
+	outline: none;
+}
+
+
+/* 设置页面滚动 */
+body,
+html, 
+#app, 
+.index-view, 
+.search-view,
+.small-classify-view,
+.login-view,
+.register-view,
+.product-view{
+	max-width: 480px;
+	min-width: 320px;
+	width: 100%;
+	height: 100vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+/* 设置二级页面滚动条 */
+.home-view,
+.classify-view,
+.cart-view,
+.user-view{
+	width: 100%;
+	height: calc(100% - 51px);
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+/* 覆盖 vant 的类名 */
+.van-nav-bar__text{
+	font-size: 15px;
+}
+.van-index-bar__sidebar{
+	display: none !important
+}
+.van-index-anchor--sticky{
+	display: none !important
+
+}
+.van-index-anchor{
+	font-weight: normal !important;
+	color : #999999 !important;
+}
+/* .van-submit-bar__text{
+	text-align: left !important;
+} */
+.van-address-list{
+	.van-radio__icon{
+		display: none;
+	}
+}

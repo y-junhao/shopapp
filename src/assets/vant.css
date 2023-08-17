@@ -1,0 +1,33 @@
+/* 此文件专门用来 修改当前项目 vant 的	全局	 样式 */
+:root:root{
+	/* --van-button-primary-color : yellow; */
+	/* --van-tabbar-background : rgba(255,255,255,0.5); */
+	--van-search-content-background : #f3f3f3;
+	
+	--van-search-label-color : var(--base-color);
+	--van-tabs-bottom-bar-color : var(--base-color);
+	--van-tab-active-text-color : var(--base-color);
+	
+	/* --van-divider-margin : 0px 0px 20px; */
+	
+	--van-nav-bar-background : #24272F;
+	--van-nav-bar-title-text-color : #fff;
+	--van-nav-bar-icon-color: #fff;
+	--van-nav-bar-text-color : #fff;
+	
+	/*  */
+	--van-badge-background : var(--base-color);
+	--van-badge-border-width : 0px;
+	--van-badge-padding : 1px 5px;
+	
+	--van-stepper-background : #F6BAC3;
+	--van-stepper-button-round-theme-color : #F6BAC3;
+
+
+
+}
+.price-all{
+	--van-cell-value-color : black;
+	font-size: 16px;
+	font-weight: bold;
+}
